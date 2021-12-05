@@ -50,7 +50,7 @@ function screenTicker() {
 
 async function startOS() {
     // Fetch words
-    let raw = await fetch("/words.json")
+    let raw = await fetch("/terminal/words.json")
     words = await raw.json()
 
     // Printout maios splash screen
