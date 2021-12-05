@@ -1,0 +1,66 @@
+* { padding: 0; margin: 0; font-family: input-mono, monospace; }
+
+:root {
+    --bg: #000000;
+    --bg-secondary: rgb(30, 30, 30);
+    --secondary: rgb(56, 52, 60);
+    --secondary-input: rgb(50, 48, 52);
+}
+
+body {
+    background-color: var(--bg);
+}
+
+.toolbar {
+    background-color: var(--secondary);
+    text-align: center;
+    border-radius: 6px 6px 0px 0px;
+    width: 700px;
+    /*height: 36px;*/
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.card {
+    background-color: var(--bg-secondary);
+    text-align: left;
+    border-radius: 0;
+    width: 700px;
+    height: 400px;
+}
+
+.prompt input {
+    background-color: var(--secondary-input);
+    text-align: center;
+    border-radius: 0px 0px 6px 6px;
+    width: 700px;
+    /*height: 36px;*/
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+.toolbar p {
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+}
+
+#output {
+    color: white;
+    white-space: pre;
+    font-size: 14px;
+}
